@@ -1,1 +1,4 @@
 # MPI-Programming
+
+MPI programming was used to approximate the result of an integral obtained from Monte Carlo Integration. This method utilizes large samples of random numbers within the integral bounds to estimate a solution. As a result, the code can be highly parallelized as each node can sample different ranges of random values and perform calculations. The larger the number of samples, the closer the result was to converging to the correct solution. The parallelized code was used to measure speedup when the total number of processes was increased. Additionally, it tested how performance is affected when the number of processes is increased beyond the number of processors in the system. Testing with batch queuing also demonstrated how process interleaving can affect execution times. The total execution time was used to identify the speed at which the integral was calculated when it was run in parallel and distributed over a multi-processor system.  
+
